@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <style>
         body{
             height: 3000px;
@@ -41,7 +42,15 @@
             height:60vh;
             position: absolute;
             left:900px;
-            
+              
+        }
+        #sweet{ 
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            height:60vh;
+            position: absolute;
+            left:1300px;
+            top:200px;   
         }
 
         #left_img{
@@ -75,6 +84,18 @@
             bottom:600px;
         }
 
+        .circle {
+            width:200px;
+            height:200px;
+            border-radius: 100%;
+            background-color: cadetblue;
+        }
+
+        #booking{
+            width:100%;
+            height:500px;
+            background-color: cornflowerblue;
+        }
     </style>
 </head>
 <body>
@@ -83,106 +104,149 @@
             <img src="" alt="">
         </div>
     </nav>
+
     <section>
         <div class="banner"></div>
     </section>
+    <!-- 主畫面圖片 -->
     <section>
         <div class="intro_photo d-flex position-relative">
            <img id="left_img" src="/04-素材/首圖.端餅乾.jpg" alt=""> 
-           <h2  data-aos="fade-down-right"  data-aos-duration="500000" >預約甜點製作-
+           <h2  class=" p-2" data-aos="fade-down-right"  data-aos-duration="500000"  >預約甜點製作-
             <br><span>願能與你一起度過每一個慶祝的日子</span>
             <br><span>就像礦石裡頭，</span>
             <br><span>神秘閃耀的色彩；</span>
             <br><span>如同在平凡生活中，</span>
             <br><span>沾染一點新奇</span></br>
             </h2>
-           <span></span>
+           
            <img src="/04-素材/98985535_722242305190037_3253644649654386688_n.jpg" alt="">
            <img id="logo" src="/04-素材/發光的石頭直字logo.png" alt="">
+           <span id="sweet">一人甜點工作室</span>
         </div>
         
     </section>
+
     <section>
         <div class="parallax-window" data-parallax="scroll" data-image-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/anigif-1606895661.gif?crop=1xw:1xh;center,top&resize=480:*"></div>
 
     </section>
-
+    <!-- 作品集 -->
     <section>
         <div id="card_group" class=" fuild-container ">
-            <div class="row mb-5"  data-aos="fade-up"
+            <div class="row "  data-aos="fade-up"
                  data-aos-anchor-placement="center-bottom" data-aos-duration="2000" >
-                <div class="col-lg-2 col-6 p-5 ">
+                 <div class="offset-lg-1 offset-0 ">
+                </div>
+                <div class=" col-lg-3 col-xl-2  p-3 ">
                     <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">                   
                 </div>
-                <div class="col-lg-2 col-6 p-5">
+                <div class="col-lg-3 col-xl-2 col-6 p-3">
                     <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">                   
                 </div>
-                <div class="col-lg-2 col-6  p-5">
+                <div class="col-lg-3 col-xl-2 col-6  p-3">
                     <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">
                 </div>
-                <div class="offset-lg-6 offset-0 ">
+                <div class="offset-xl-5 offset-0 ">
                 </div>
             </div>
-            <div class="row"  data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="300">
-                 <div class="offset-lg-4 offset-0 ">
+            <div class="row"  data-aos="fade-up3"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="200">
+                 <div class="offset-lg-1 offset-xl-5 offset-0  ">
                 </div>
-                <div class="col-lg-2 col-6 p-5">
+                <div class="col-lg-3 col-xl-2 p-3">
                     <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
                 </div>
-                <div class="col-lg-2 col-6 p-5">
+                <div class="col-lg-3 col-xl-2 col-6 p-3">
                     <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
                 </div>
-                <div class="col-lg-2 col-6 p-5">
+                <div class="col-lg-3 col-xl-2 col-6 p-3 ">
                     <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
                 </div>
             </div>
-            
-            <!-- <div class="row" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="600">
-                <div class="col-lg-2 col-6">
-                    <div class="box"></div>
-                </div>
-                <div class="col-lg-2  col-6 ">
-                    <div class="box"></div>
-                </div>
-                <div class="col-lg-2 col-6 ">
-                    <div class="box"></div>
-                </div>
-                <div class="offset-lg-6 offset-0">
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="900">
-                <div class="offset-lg-6 offset-0">
-    
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="box"></div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="box"></div>
-                </div>
-                <div class="col-lg-2 col-6 ">
-                    <div class="box"></div>
-                </div>
-            </div> -->
-                
-            
-                
+            <div class="row "  data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="400" >
+            <div class="offset-lg-1 offset-0 ">
+           </div>
+           <div class=" col-lg-3 col-xl-2  p-3 ">
+               <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">                   
+           </div>
+           <div class="col-lg-3 col-xl-2 col-6 p-3">
+               <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">                   
+           </div>
+           <div class="col-lg-3 col-xl-2 col-6  p-3">
+               <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">
+           </div>
+           <div class="offset-xl-5 offset-0 ">
+           </div>
+       </div>
+       <div class="row"  data-aos="fade-up3"
+           data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="600">
+            <div class="offset-lg-1 offset-xl-5 offset-0  ">
+           </div>
+           <div class="col-lg-3 col-xl-2 p-3">
+               <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
+           </div>
+           <div class="col-lg-3 col-xl-2 col-6 p-3">
+               <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
+           </div>
+           <div class="col-lg-3 col-xl-2 col-6 p-3 ">
+               <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
+           </div>
+       </div>
+        </div>     
     </section>
-    
+    <!-- 顧客分享 -->
+    <section>
+        <div class="cotainer">
+            <div class="customer_share d-flex m-auto">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        </div>
+    </section>
+    <!-- 最新消息 -->
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/04-素材/83725068_646228652791403_5913987597985644544_n.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/04-素材/86443916_654111375336464_8658178040330715136_n.jpg" alt=""></div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
+    <!-- 訂貨方式 -->
+    <section>
+        <div id="booking" class="fuild-container ">
+            <div class="booking_ways d-flex justify-content-around align-items-center m-auto">
+                <div class="circle "></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        
+    </section>
         
     
-    
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous"></script>
 
     <script>
         var nav =document.querySelector("nav")
-         
-
         window.onscroll=function(){
             if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
                 nav.classList.add("hide")
@@ -191,6 +255,25 @@
 
             }
         }
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 1,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+    });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
