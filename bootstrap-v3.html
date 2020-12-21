@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        body{
+            height: 3000px;
+        }
+        nav{
+            width:100%;
+            height: 100px;
+            background-color: darkgreen;
+        }
+
+        nav.hide{
+            position: fixed;
+            left:0;
+            top:0;
+            opacity: 0.6;
+        }
+
+        .banner{
+            width: 100%;
+            height: 600px;
+            background-color: darkgrey;
+        }
+
+        .intro_photo{
+            position: relative;
+        }
+
+        .intro_photo h2{
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            height:60vh;
+            position: absolute;
+            left:900px;
+            
+        }
+
+        #left_img{
+            width:60%;
+            height: 40vh;
+            position: absolute;
+            top:400px;
+            
+        }
+
+        .parallax-window {
+            min-height: 400px;
+            background: transparent;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+
+        #card_group .row img{
+            width: 100%;
+        }
+
+        #logo{
+            width:500px;
+            height:500px;
+            position: absolute;
+            left:1100px;
+            bottom:600px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="" alt="">
+        </div>
+    </nav>
+    <section>
+        <div class="banner"></div>
+    </section>
+    <section>
+        <div class="intro_photo d-flex position-relative">
+           <img id="left_img" src="/04-素材/首圖.端餅乾.jpg" alt=""> 
+           <h2  data-aos="fade-down-right"  data-aos-duration="500000" >預約甜點製作-
+            <br><span>願能與你一起度過每一個慶祝的日子</span>
+            <br><span>就像礦石裡頭，</span>
+            <br><span>神秘閃耀的色彩；</span>
+            <br><span>如同在平凡生活中，</span>
+            <br><span>沾染一點新奇</span></br>
+            </h2>
+           <span></span>
+           <img src="/04-素材/98985535_722242305190037_3253644649654386688_n.jpg" alt="">
+           <img id="logo" src="/04-素材/發光的石頭直字logo.png" alt="">
+        </div>
+        
+    </section>
+    <section>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/anigif-1606895661.gif?crop=1xw:1xh;center,top&resize=480:*"></div>
+
+    </section>
+
+    <section>
+        <div id="card_group" class=" fuild-container ">
+            <div class="row mb-5"  data-aos="fade-up"
+                 data-aos-anchor-placement="center-bottom" data-aos-duration="2000" >
+                <div class="col-lg-2 col-6 p-5 ">
+                    <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">                   
+                </div>
+                <div class="col-lg-2 col-6 p-5">
+                    <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">                   
+                </div>
+                <div class="col-lg-2 col-6  p-5">
+                    <img src="/04-素材/99008817_719761452104789_3928856350884364288_n.jpg" alt="">
+                </div>
+                <div class="offset-lg-6 offset-0 ">
+                </div>
+            </div>
+            <div class="row"  data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="300">
+                 <div class="offset-lg-4 offset-0 ">
+                </div>
+                <div class="col-lg-2 col-6 p-5">
+                    <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-6 p-5">
+                    <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-6 p-5">
+                    <img src="/04-素材/99136386_719761405438127_796587623043825664_n.jpg" alt="">
+                </div>
+            </div>
+            
+            <!-- <div class="row" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="600">
+                <div class="col-lg-2 col-6">
+                    <div class="box"></div>
+                </div>
+                <div class="col-lg-2  col-6 ">
+                    <div class="box"></div>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <div class="box"></div>
+                </div>
+                <div class="offset-lg-6 offset-0">
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-delay="900">
+                <div class="offset-lg-6 offset-0">
+    
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="box"></div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="box"></div>
+                </div>
+                <div class="col-lg-2 col-6 ">
+                    <div class="box"></div>
+                </div>
+            </div> -->
+                
+            
+                
+    </section>
+    
+        
+    
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous"></script>
+
+    <script>
+        var nav =document.querySelector("nav")
+         
+
+        window.onscroll=function(){
+            if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+                nav.classList.add("hide")
+            }else{
+                nav.classList.remove("hide")
+
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
+</body>
+</html>
